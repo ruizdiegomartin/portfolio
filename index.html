@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://db.onlinewebfonts.com/c/fd2bae1d67c789adf8a1ea32e081e495?family=Helvetica+Neue+Thin" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer type="text/javascript" src="./script.js"></script>
+    <title>ruizdiegomartin portfolio</title>
+</head>
+<body>
+    <header>
+      <nav class="nav">
+            <a href="/" class="logo-link">
+              <img src="https://i.ibb.co/xq6t97j3/logo.png" alt="logo" class="brand" />
+            </a>
+            <ul class="nav-ul">
+              <li>
+              <a href="#main"> Home </a>
+              </li>
+              <li>
+                <a href="#portfolio"> Portfolio </a>
+              </li>
+              <li>
+                <a href="#about"> About </a>
+              </li>
+              <li>
+                <a href="#contact"> Contact </a>
+            </ul>
+            <button class="navbar-toggler collapsed" type="button">
+                <span class="toggler-icon top-bar-collapsed"></span>
+                <span class="toggler-icon middle-bar-collapsed"></span>
+                <span class="toggler-icon bottom-bar-collapsed"></span>
+            </button>
+            <!-- Dropdown menu -->
+            <ul class="nav-dropdown">
+              <li>
+                <a href="#main">Home</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+      </nav>
+    </header>
+
+
+
+
+
+    <main>
+      <main id="main" class='main-wrapper'>
+        <div class='content-column'>
+          <h1 class='title' data-aos="fade-down" data-aos-duration="2000">Hi! My name is Diego<span>.</span></h1>
+          <h2 class='subtitle' data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000">I'm a Front-End Dev from Buenos Aires, Argentina. </h2>
+        </div>
+        <div class='img-column'>
+          <img src="./assets/img/profile.png" alt="Developer portrait picture" class='portrait'/>
+        </div>  
+      </main>
+      <div class='title-banner'>
+        <h2 id='portfolio'> Check out my work! 💼 </h2>
+      </div>
+      <section class='portfolio-section'>
+        <a href='https://let-it-be-shop.web.app' target='_blank' rel='noreferrer'><img class='project-picture' loading="lazy" src='https://i.ibb.co/qLhLf8Fg/let-it-be-store-react.jpg' alt="E-Commerce con hecho con React"/></a>
+        <a href='hhttps://bighouseapartments.com.ar/' target='_blank' rel='noreferrer'><img class='project-picture' loading="lazy" src='https://i.ibb.co/YByKd9RN/big-house-apartments.jpg' alt="Institutional Site with Wordpress"></a>
+        <a href='https://ruizdiegomartin.github.io/proyecto-final-js/index.html' target='_blank' rel='noreferrer'><img class='project-picture' loading="lazy" src='https://i.ibb.co/YFfDGGhf/let-it-be-shop-js.jpg' alt="E-Commerce hecho con Vanilla Javascript"/></a>
+        <a href='https://essentialsa.com/' target='_blank' rel='noreferrer'><img class='project-picture' loading="lazy" src='https://i.ibb.co/GfQXZ9WG/essential.jpg' alt="Institutional Site with Wordpress"/></a>
+      </section>
+      <div class='title-banner'>
+          <h2 id='about'> About me 📔 </h2>
+      </div>
+      <section class='about-section'> 
+        <div class='biography-card'>
+          <h2 class='biography-title' id='about'> Hi, there!</h2>
+          <p class='biography-text'> My name is Diego Martin Ruiz and i'm a <strong>Frontend Developer</strong> settled in Buenos Aires, Argentina.</p>
+          <p class='biography-text'> I'm passionate about coding, building websites from scratch and playing with the UI design.<br></br> I can build projects using HTML, JavaScript, React and Wordpress CMS.</p>
+          <p class='biography-text'>Becoming Fullstack Developer is my next goal.</p>
+        </div>
+        <!-- <div class='tools-card'>
+          <h2> {"<h1> Summary </h1>"} <LightbulbIcon/></h2>
+          <p> <span class='color-pink'>const</span> <span className='color-green'> developer</span> <span className='color-pink'>=</span> {"{"}</p>
+          <p> <span class='color-blue ml-1'>name</span>: "Diego Martin Ruiz", </p>
+          <p> <span class='color-blue ml-1'>location</span>: "Buenos Aires, Argentina.", </p>
+          <p> <span class='color-blue ml-1'>tools</span>: {"["}</p>
+          <p class='ml-2'> "html", "css", "javascript", "bootstrap", "sass", "react", "git", "wordpress", "elementor", "woocommerce" </p>
+          <p class='ml-1'> {"]"}</p>
+          <p> {"}"}</p>
+        </div> -->
+      </section>
+      <section class='contact-section'>
+        <h2 id="contact"> Get in touch 👋... </h2>
+      </section>
+      <form class='contact-form'>
+        <div class='contact-form__group group_name'>
+            <label > Your name </label>
+            <input type="text" maxLength="50" name="user_name" placeholder='Full Name'/> 
+            <p class='invalidInputMessage name-error-msg'> Enter a valid name. </p>
+        </div>
+        <div class='contact-form__group group_email'>
+            <label > Your email </label>
+            <input type="email"  maxLength="50" name="user_email" placeholder='email@example.com'/>
+            <p class='invalidInputMessage email-error-msg'> Enter a valid email. </p>
+        </div>
+        <div class='contact-form__group--text-area group_message'>
+            <label > Your message </label>
+            <textarea name="message" placeholder="Write your consult here..." maxLength="1000" id="" cols="30" rows="10" required></textarea>
+        </div>
+        <div class='submit-warning'>
+          <p> Correct the invalid fields to send the message </p> 
+          <img class="icons " src="./assets/icons/icon-warning.svg" alt="warning sign icon">
+        </div>
+        <div class='contact-form__group--button'>
+          <button class='green-button'> Message Sended <img class="icons" src="./assets/icons/icon-checked.svg" alt="checked icon"></button>
+          <button type="submit" class='dark-button'> Send <img class="icons" src="./assets/icons/icon-send.svg" alt="paper plane send icon"></button>
+        </div>
+      </form>
+      
+    </main>
+    <footer>
+      <section class="section-info">
+        <div class="footer-column left-column">
+          <div class="footer-group">
+            <h3 class="subtitles-footer">LOCATION</h3>
+            <span class="footer-subgroup">
+              <img class="icons" src="./assets/icons/icon-map.svg" alt="map location icon">
+              <p class="text-footer">Buenos Aires, Argentina.</p>
+            </span>  
+          </div>
+          <div class="footer-group">
+            <h3 class="subtitles-footer">CONTACT ME!</h3>
+            <span class="footer-subgroup">
+              <img class="icons" src="./assets/icons/icon-mail.svg" alt="closed envolpe icon">
+              <a class="dev-mail" href="mailto:ruizdiegomartin.dev@gmail.com">ruizdiegomartin.dev@gmail.com</a> 
+            </span>
+          </div>  
+        </div>
+        <div class="footer-column middle-column">
+          <div class="services-group">
+            <h3 class="subtitles-footer">SERVICES</h3>
+            <p class="text-footer"> Landing Pages </p>
+            <p class="text-footer"> Institutional Websites </p>
+            <p class="text-footer"> E-Commerce Stores </p>
+            <p class="text-footer"> Personal Websites </p>
+          </div>
+        </div>
+        <div class="footer-column right-column">
+          <div>
+            <h3 class="subtitles-footer">SOCIAL MEDIA</h3>
+            <div class="social-icons-row"> 
+              <a href="https://github.com/ruizdiegomartin" target="_blank" rel="noopener noreferrer">
+                <img class="icons" src="./assets/icons/icon-github.svg" alt="github icon">
+              </a>
+              <a href="https://www.linkedin.com/in/ruizdiegomartin" target="_blank" rel="noopener noreferrer">
+                <img class="icons linkedin" src="./assets/icons/icon-linkedin.svg" alt="linkedin icon">
+              </a>
+            </div>
+          </div>
+        </div> 
+      </section>
+      <hr />
+      <div class="section-copyright">
+        <h4 class="copyrights-text">
+          2025 © Diego Martin Ruiz. All Rights Reserved.
+        </h4>
+        <h4 class="copyrights-text">
+          Designed & Developed by <span class="dev">diegomartinruiz</span>
+        </h4>
+      </div>
+    </footer>
+
+
+  <script> AOS.init() </script>
+</body>
+</html>

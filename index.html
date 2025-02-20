@@ -7,6 +7,7 @@
     <link href="https://db.onlinewebfonts.com/c/fd2bae1d67c789adf8a1ea32e081e495?family=Helvetica+Neue+Thin" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script defer type="text/javascript" src="./script.js"></script>
     <title>ruizdiegomartin portfolio</title>
 </head>
@@ -62,7 +63,7 @@
           <h1 class='title' data-aos="fade-down" data-aos-duration="2000">Hi! My name is Diego<span>.</span></h1>
           <h2 class='subtitle' data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000">I'm a Front-End Dev from Buenos Aires, Argentina. </h2>
         </div>
-        <div class='img-column'>
+        <div class='portrait-column'>
           <img src="./assets/img/profile.png" alt="Developer portrait picture" class='portrait'/>
         </div>  
       </main>
@@ -98,7 +99,7 @@
       </section>
       <section class='contact-section'>
         <h2 id="contact"> Get in touch 👋... </h2>
-      </section>
+      
       <form class='contact-form'>
         <div class='contact-form__group group_name'>
             <label > Your name </label>
@@ -119,10 +120,11 @@
           <img class="icons " src="./assets/icons/icon-warning.svg" alt="warning sign icon">
         </div>
         <div class='contact-form__group--button'>
-          <button class='green-button'> Message Sended <img class="icons" src="./assets/icons/icon-checked.svg" alt="checked icon"></button>
+          <button class='green-button'> Message Sent <img class="icons" src="./assets/icons/icon-checked.svg" alt="checked icon"></button>
           <button type="submit" class='dark-button'> Send <img class="icons" src="./assets/icons/icon-send.svg" alt="paper plane send icon"></button>
         </div>
       </form>
+    </section>
       
     </main>
     <footer>
@@ -179,5 +181,6 @@
 
 
   <script> AOS.init() </script>
+  <script type="text/javascript"> (function() {emailjs.init('s4WFMcaID1sreA24i');})();</script>
 </body>
 </html>

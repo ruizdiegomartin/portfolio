@@ -76,23 +76,16 @@ const validateFields = (data) => {
     return false;
 }
 
-const resetFields = () => {
-    document.querySelector('input[name="user_name"]').value = "";
-    document.querySelector('input[name="user_email"]').value = "";
-    document.querySelector('input[name="message"]').value = "";
-}
 
 const sendEmail = () => {
-    emailjs.sendForm('service_3vrlpd6', 'template_0ywdl6g', form.current, 'mV8i5LkxjboUdtGxo')
-    .then((result) => {
-        console.log(result.text);
-        messageSended = true;
-        resetFields();
+    
+    emailjs.sendForm('service_3vrlpd6', 'template_0ywdl6g', '.contact-form').then(
+        (response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        messageSended();
     },(error) => {
-        console.log(error.text);
+        console.log('FAILED...', error);
     })
-    messageSended();
-    console.log('mensaje enviado'); 
 } 
 
 const messageSended = () => {
@@ -109,8 +102,9 @@ contactForm.addEventListener('submit', (e)=>{
         new FormData(e.target) 
     )
     console.log(data)
-    validateFields(data) && sendEmail();
-})
+    
+    validateFields(data) && sendEmail(data);
+    })
 
 
 

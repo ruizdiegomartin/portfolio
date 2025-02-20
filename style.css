@@ -243,11 +243,11 @@ main {
   font-size: 4rem;
 }
 
-.img-column {
+.portrait-column {
   max-width: 350px;
 }
 
-.img-column > img {
+.portrait-column > img {
   padding: 2.5px;
   border-radius: 50%;
   box-shadow: -3px -3px 7px #ffffff,
@@ -457,17 +457,17 @@ form > input {
 }
 @media screen and (max-width: 1024px) {
   .contact-form  {
-      min-width: 75%
+      min-width: 80%
   }
 }
 @media screen and (max-width: 768px) {
   .contact-form  {
-      min-width: 80%
+      min-width: 100%
   }
 }
 @media screen and (max-width: 480px) {
   .contact-form  {
-      min-width: 90%;
+      min-width: 100%;
       margin-bottom: 0;
   }
 }
@@ -477,7 +477,7 @@ form > input {
 .contact-form__group {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 350px;
   gap: 4px;
   margin-bottom: 1rem;
 }
@@ -502,7 +502,7 @@ form > input {
 .contact-form__group--text-area{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 600px;
   gap: 4px;  
 }
 
@@ -539,7 +539,7 @@ form > input {
   margin-top: 2.5rem;
   background-color: #333232;
   color: #f1efef;
-  width: 50%;
+  width: 300px;
   padding: .7rem 1.5rem;
   border-radius: 4px;
   box-shadow: -3px -3px 7px #ffffff,
@@ -553,6 +553,7 @@ form > input {
 .green-button {
   all: unset;
   display: none;
+  visibility: hidden;
   justify-content: center;
   align-items: center;
   gap: 4px;
@@ -604,6 +605,8 @@ form > input {
 
 .d-flex {
   display: flex;
+  visibility: visible;
+  transition: visibility 2s ease-out;
 }
 
 .submit-warning > p {

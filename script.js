@@ -4,16 +4,29 @@ let togglerActive = false;
 const togglerButton = document.querySelector('.navbar-toggler');
 togglerButton.addEventListener('click', ()=> handleToggler())
 
-const handleToggler = () => {
-    
-    togglerActive = !togglerActive;
-    
+const handleDropdownMenu = () => {
     document.querySelector('.top-bar-collapsed').classList.toggle('top-bar');
     document.querySelector('.middle-bar-collapsed').classList.toggle('middle-bar');
     document.querySelector('.bottom-bar-collapsed').classList.toggle('bottom-bar');
     document.querySelector('.nav-dropdown').classList.toggle('dropdown-menu-show');
 }
 
+const handleToggler = () => {
+    
+    togglerActive = !togglerActive;
+    handleDropdownMenu();
+    
+}
+
+
+
+const dropdownLinks = document.querySelectorAll('.dropdown-link');
+console.log(dropdownLinks)
+dropdownLinks.forEach(link => {
+    link.addEventListener('click', ()=> {
+        handleDropdownMenu();
+    })
+})
 // -------------------------------------------------------- contact
 
 
